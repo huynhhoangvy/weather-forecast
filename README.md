@@ -2,7 +2,7 @@
 
 Created with `create-react-app`
 
-[Live Preview] (https://huynhhoangvy-weather-forecast.herokuapp.com/cities)
+[Live Preview](https://huynhhoangvy-weather-forecast.herokuapp.com/cities)
 
 # Steps to start:
 -   `npm install`
