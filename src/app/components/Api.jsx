@@ -9,6 +9,7 @@ const Api = () => {
 
   useEffect(() => {
     dispatch(requestApiData());
+    console.log('run')
   }, []);
 
   const mapFunc = (x, i) => (

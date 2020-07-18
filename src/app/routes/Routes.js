@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Cities from "../components/Cities";
+import Cities from "../components/city/Cities";
 import Api from "../components/Api";
 
 const Routes = () => {

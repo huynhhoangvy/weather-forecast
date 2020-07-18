@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function App() {
   return (
-    <div className="App">
+    <div className="App container">
       <ul>
         <li>
           <Link to="/">Home</Link>

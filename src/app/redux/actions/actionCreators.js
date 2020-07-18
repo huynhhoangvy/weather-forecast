@@ -1,14 +1,49 @@
-import { REQUEST_API_DATA, RECEIVE_API_DATA } from "./constants";
+import * as constants from "../../constants";
 
 export const requestApiData = () => {
   return {
-    type: REQUEST_API_DATA
+    type: constants.REQUEST_API_DATA
   };
 };
 
 export const receiveApiData = data => {
   return {
-    type: RECEIVE_API_DATA,
+    type: constants.RECEIVE_API_DATA,
     data
   };
 };
+
+export const getWeatherByIdRequest = (id) => {
+  return {
+    type: constants.GET_WEATHER_BY_ID_REQUEST,
+    id
+  }
+}
+
+export const getWeatherByIdSuccess = (data) => {
+  return {
+    type: constants.GET_WEATHER_BY_ID_SUCCESS,
+    data
+  }
+}
+
+export const getWeatherByIdError = (err) => {
+  return {
+    type: constants.GET_WEATHER_BY_ID_ERROR,
+    err
+  }
+}
+
+export const addCity = city => {
+  return {
+    type: constants.ADD_CITY,
+    city
+  }
+}
+
+export const removeCity = id => {
+  return {
+    type: constants.REMOVE_CITY,
+    id
+  }
+}
