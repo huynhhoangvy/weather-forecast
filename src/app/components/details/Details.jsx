@@ -26,7 +26,7 @@ const Details = () => {
             {
               weather.list.map((item, i) => (
                 <Col className="col-3" key={i}>
-                  <img src={`http://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`} alt="" />
+                  <img src={`https://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`} alt="" />
                   <div>
                     {moment.unix(item.dt).format('MMM DD')}
                     </div>

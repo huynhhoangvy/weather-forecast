@@ -74,7 +74,7 @@ const Cities = () => {
                 max: {(Math.round(item.main.temp_max * 10) / 10).toFixed()}&deg;C
             </div>
               {item.weather[0].main}
-              <img src={`http://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`} alt="" />
+              <img src={`https://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`} alt="" />
             </Col>
           ))
         }
