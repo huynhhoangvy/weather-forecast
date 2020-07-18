@@ -6,7 +6,9 @@ import {
   getWeatherByIdSuccess,
   getWeatherByIdError,
   getForecastByIdSuccess,
-  getForecastByIdError
+  getForecastByIdError,
+  getWeatherByGroupSuccess,
+  getWeatherByGroupError
 } from "../actions/actionCreators";
 import * as constants from "../../constants";
 
@@ -17,6 +19,7 @@ const BASE_URL = process.env.REACT_APP_WEATHER_API_URL;
 export function* weatherSaga() {
   yield takeLatest(constants.GET_WEATHER_BY_ID_REQUEST, getWeatherByIdWorker);
   yield takeLatest(constants.GET_FORECAST_BY_ID_REQUEST, getForecastByIdWorker);
+  yield takeLatest(constants.GET_WEATHER_BY_GROUP_REQUEST, getWeatherByGroupWorker);
 }
 
 function* getWeatherByIdWorker(action) {
@@ -24,10 +27,10 @@ function* getWeatherByIdWorker(action) {
     console.log('action: ', action)
     const response = yield call(getWeatherById, action.id);
     const data = yield response.json();
-    console.log('response in saga: ', data)
+    console.log('data in saga: ', data)
+    console.log('response in saga: ', response)
     if (response.status === 200) {
       yield put(getWeatherByIdSuccess(data));
-      storeData(data)
     } else {
       yield put(getWeatherByIdError(data));
     }
@@ -48,10 +51,6 @@ const getWeatherById = async (id) => {
   }
   try {
     return await fetch(url, settings);
-    // const response = await fetch(url, settings);
-    // const data = await response.json();
-    // return data;
-    // return response;
   } catch (err) {
     console.error(err);
     throw err;
@@ -73,7 +72,7 @@ function* getForecastByIdWorker(action) {
 }
 
 const getForecastById = async (id) => {
-  const url = `${BASE_URL}/forecast?id=${id}&APPID=${API_KEY}&units=metric`
+  const url = `${BASE_URL}/forecast?id=${id}&APPID=${API_KEY}&units=metric`;
   const settings = {
     method: 'GET',
     headers: {
@@ -88,27 +87,36 @@ const getForecastById = async (id) => {
   }
 }
 
-const storeData = (data) => {
-  const temp = {
-    id: data.id,
-    name: data.name,
-    country: data.sys.country
-  }
-  const localData = JSON.parse(localStorage.getItem('cities'));
-  if (localData) {
-    console.log('if: ', [...localData, temp])
-    localStorage.setItem('cities', JSON.stringify([...localData, temp]))
-  } else {
-    console.log('else: ', [temp])
-    localStorage.setItem('cities', JSON.stringify([temp]))
+function* getWeatherByGroupWorker(action) {
+  console.log('group res: ', action)
+  try {
+    console.log('group res: ', action)
+    const response = yield call(getWeatherByGroup, action.ids);
+    const data = yield response.json();
+    console.log('group res: ', response)
+    if (response.status === 200) {
+      yield put(getWeatherByGroupSuccess(data));
+    } else {
+      yield put(getWeatherByGroupError(data));
+    }
+  } catch (err) {
+    yield put(getWeatherByGroupError(err));
   }
 }
 
-function* getApiData(action) {
+const getWeatherByGroup = async (ids) => {
+  const url = `${BASE_URL}/group?id=${ids}&units=metric&APPID=${API_KEY}`;
+  console.log('group api: ', url)
+  const settings = {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  }
   try {
-    const data = yield call(fetchData);
-    yield put(receiveApiData(data));
-  } catch (e) {
-    console.error(e);
+    return await fetch(url, settings);
+  } catch (err) {
+    console.error(err);
+    throw err;
   }
 }

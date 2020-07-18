@@ -10,13 +10,23 @@
     }
   },
   {
-    "id": 2643743,
-    "name": "London",
+    "id": 2147714,
+    "name": "Sydney",
     "state": "",
-    "country": "GB",
+    "country": "AU",
     "coord": {
-      "lon": -0.12574,
-      "lat": 51.50853
+      "lon": 151.207321,
+      "lat": -33.867851
+    }
+  },
+  {
+    "id": 3173435,
+    "name": "Milan",
+    "state": "",
+    "country": "IT",
+    "coord": {
+      "lon": 9.18951,
+      "lat": 45.464272
     }
   },
   {
@@ -30,13 +40,13 @@
     }
   },
   {
-    "id": 524894,
-    "name": "Moscow",
+    "id": 2950158,
+    "name": "Berlin",
     "state": "",
-    "country": "RU",
+    "country": "DE",
     "coord": {
-      "lon": 37.606667,
-      "lat": 55.761665
+      "lon": 10.45,
+      "lat": 54.033329
     }
   },
   {

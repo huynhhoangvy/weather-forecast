@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import citiesData from '../../city-list.json';
 import Dropdown from "react-bootstrap/Dropdown";
 import CustomToggle from "../custom-toggle/CustomToggle";
 import CustomMenu from "../custom-menu/CustomMenu";
-import { getWeatherByIdRequest, addCity, removeCity } from "../../redux/actions/actionCreators";
+import { getWeatherByIdRequest, addCity, removeCity, getWeatherByGroupRequest } from "../../redux/actions/actionCreators";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import './cities.sass';
+import { getName } from 'country-list';
 
 const Cities = () => {
   const dispatch = useDispatch();
@@ -20,19 +24,22 @@ const Cities = () => {
 
   const onClickRemoveCity = idx => {
     dispatch(removeCity(idx));
-    // const localData = JSON.parse(localStorage.getItem('cities'));
-    // if (localData) {
-    //   localStorage.setItem('cities', localData.filter(item => item.id !== idx));
-    // }
   };
 
   const getCityIds = (cities) => {
-    const result = cities.reduce((acc, item) => [...acc, item.id], []);
+    const result = cities.reduce((acc, item) => [...acc, item.id], []).join(',');
+    console.log('res: ', result)
     return result;
   };
 
+  useEffect(() => {
+    console.log('cities: ', cities)
+    const result = getCityIds(cities)
+    // dispatch(getWeatherByGroupRequest(result));
+  }, [])
+
   return (
-    <div>
+    <>
       <Dropdown>
         <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
           Cities
@@ -48,24 +55,31 @@ const Cities = () => {
         </Dropdown.Menu>
       </Dropdown>
       <h3>MY LIST:</h3>
-      <ol>
+      <button onClick={() => dispatch(getWeatherByGroupRequest(getCityIds(cities)))}>get</button>
+      <Row>
         {
           cities.map((item, i) => (
-            <li key={i}>
+            <Col className="col-6" key={i}>
               <Link to={`/details/${item.id}`}>
-                {item.name}
+                {item.name}, {getName(item.sys.country)}
               </Link>
-                <button onClick={() => onClickRemoveCity(item.id)}>X</button>
+              <button onClick={() => onClickRemoveCity(item.id)}>X</button>
               <div>
-                {Math.ceil(item.main.temp)}&deg;C
+                {(Math.round(item.main.temp * 10) / 10).toFixed()}&deg;C
+            </div>
+              <div>
+                min: {(Math.round(item.main.temp_min * 10) / 10).toFixed()}&deg;C
+            </div>
+              <div>
+                max: {(Math.round(item.main.temp_max * 10) / 10).toFixed()}&deg;C
             </div>
               {item.weather[0].main}
               <img src={`http://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`} alt="" />
-            </li>
+            </Col>
           ))
         }
-      </ol>
-    </div>
+      </Row>
+    </>
   );
 };
 

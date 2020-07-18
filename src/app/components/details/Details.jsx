@@ -4,6 +4,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getForecastByIdRequest } from '../../redux/actions/actionCreators';
 import isEmpty from 'lodash/isEmpty'
 import moment from 'moment';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const Details = () => {
   const dispatch = useDispatch();
@@ -20,10 +22,11 @@ const Details = () => {
         !isEmpty(weather) &&
         <div>
           <h4>{weather.city.name}, {weather.city.country}</h4>
-          <div>
+          <Row>
             {
               weather.list.map((item, i) => (
-                <div key={i}>
+                <Col className="col-3" key={i}>
+                  <img src={`http://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`} alt="" />
                   <div>
                     {moment.unix(item.dt).format('MMM DD')}
                     </div>
@@ -31,15 +34,14 @@ const Details = () => {
                     {moment.unix(item.dt).format('h A')}
                   </div>
                   <div>
-                    {Math.ceil(item.main.temp)}&deg;C
+                    {(Math.ceil(item.main.temp*10)/10).toFixed()}&deg;C
                   </div>
                   {item.weather[0].main}
                   <div>{item.weather[0].description}</div>
-                  <img src={`http://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`} alt="" />
-                </div>
+                </Col>
               ))
             }
-          </div>
+          </Row>
         </div>
       }
     </>
