@@ -1,322 +1,322 @@
 [
-    {
-        "id": 3169070,
-        "name": "Rome",
-        "state": "",
-        "country": "IT",
-        "coord": {
-            "lon": 12.4839,
-            "lat": 41.894741
-        }
-    },
-    {
-        "id": 2643743,
-        "name": "London",
-        "state": "",
-        "country": "GB",
-        "coord": {
-            "lon": -0.12574,
-            "lat": 51.50853
-        }
-    },
-    {
-        "id": 2968815,
-        "name": "Paris",
-        "state": "",
-        "country": "FR",
-        "coord": {
-            "lon": 2.3486,
-            "lat": 48.853401
-        }
-    },
-    {
-        "id": 524894,
-        "name": "Moscow",
-        "state": "",
-        "country": "RU",
-        "coord": {
-            "lon": 37.606667,
-            "lat": 55.761665
-        }
-    },
-    {
-        "id": 1704129,
-        "name": "Madrid",
-        "state": "",
-        "country": "PH",
-        "coord": {
-            "lon": 125.964371,
-            "lat": 9.26211
-        }
-    },
-    {
-        "id": 1566166,
-        "name": "Thanh Hoa",
-        "state": "",
-        "country": "VN",
-        "coord": {
-            "lon": 105.76667,
-            "lat": 19.799999
-        }
-    },
-    {
-        "id": 1566083,
-        "name": "Ho Chi Minh",
-        "state": "",
-        "country": "VN",
-        "coord": {
-            "lon": 106.666672,
-            "lat": 10.75
-        }
-    },
-    {
-        "id": 1568574,
-        "name": "Quy Nhon",
-        "state": "",
-        "country": "VN",
-        "coord": {
-            "lon": 109.23333,
-            "lat": 13.76667
-        }
-    },
-    {
-        "id": 1581188,
-        "name": "Cần Thơ",
-        "state": "",
-        "country": "VN",
-        "coord": {
-            "lon": 105.666672,
-            "lat": 9.83333
-        }
-    },
-    {
-        "id": 1581297,
-        "name": "Hải Phòng",
-        "state": "",
-        "country": "VN",
-        "coord": {
-            "lon": 106.583328,
-            "lat": 20.83333
-        }
-    },
-    {
-        "id": 1582562,
-        "name": "Ðồng Tháp",
-        "state": "",
-        "country": "VN",
-        "coord": {
-            "lon": 105.666672,
-            "lat": 10.66667
-        }
-    },
-    {
-        "id": 1582720,
-        "name": "Ðồng Nai",
-        "state": "",
-        "country": "VN",
-        "coord": {
-            "lon": 107.166672,
-            "lat": 11
-        }
-    },
-    {
-        "id": 1584071,
-        "name": "Da Lat",
-        "state": "",
-        "country": "VN",
-        "coord": {
-            "lon": 108.441933,
-            "lat": 11.94646
-        }
-    },
-    {
-        "id": 1586896,
-        "name": "Buon Ma Thuot",
-        "state": "",
-        "country": "VN",
-        "coord": {
-            "lon": 108.050003,
-            "lat": 12.66667
-        }
-    },
-    {
-        "id": 1587871,
-        "name": "Bình Ðịnh",
-        "state": "",
-        "country": "VN",
-        "coord": {
-            "lon": 109,
-            "lat": 14.16667
-        }
-    },
-    {
-        "id": 1587976,
-        "name": "Ben Tre",
-        "state": "",
-        "country": "VN",
-        "coord": {
-            "lon": 106.383331,
-            "lat": 10.23333
-        }
-    },
-    {
-        "id": 1591449,
-        "name": "Bac Ninh",
-        "state": "",
-        "country": "VN",
-        "coord": {
-            "lon": 106.050003,
-            "lat": 21.183331
-        }
-    },
-    {
-        "id": 1591474,
-        "name": "Bac Lieu",
-        "state": "",
-        "country": "VN",
-        "coord": {
-            "lon": 105.724442,
-            "lat": 9.285
-        }
-    },
-    {
-        "id": 1581130,
-        "name": "Ha Noi",
-        "state": "",
-        "country": "VN",
-        "coord": {
-            "lon": 105.841171,
-            "lat": 21.0245
-        }
-    },
-    {
-        "id": 1581088,
-        "name": "Gia Lai",
-        "state": "",
-        "country": "VN",
-        "coord": {
-            "lon": 108.25,
-            "lat": 13.75
-        }
-    },
-    {
-        "id": 1576633,
-        "name": "Lang Son",
-        "state": "",
-        "country": "VN",
-        "coord": {
-            "lon": 106.73333,
-            "lat": 21.83333
-        }
-    },
-    {
-        "id": 1577882,
-        "name": "Lâm Ðồng",
-        "state": "",
-        "country": "VN",
-        "coord": {
-            "lon": 108.333328,
-            "lat": 11.5
-        }
-    },
-    {
-        "id": 1572594,
-        "name": "Hòa Bình",
-        "state": "",
-        "country": "VN",
-        "coord": {
-            "lon": 105.25,
-            "lat": 20.33333
-        }
-    },
-    {
-        "id": 1573517,
-        "name": "Nam Dinh",
-        "state": "",
-        "country": "VN",
-        "coord": {
-            "lon": 106.166672,
-            "lat": 20.41667
-        }
-    },
-    {
-        "id": 1562693,
-        "name": "Vinh Long",
-        "state": "",
-        "country": "VN",
-        "coord": {
-            "lon": 105.966667,
-            "lat": 10.25
-        }
-    },
-    {
-        "id": 1562798,
-        "name": "Vinh",
-        "state": "",
-        "country": "VN",
-        "coord": {
-            "lon": 105.666672,
-            "lat": 18.66667
-        }
-    },
-    {
-        "id": 1559969,
-        "name": "Nghệ An",
-        "state": "",
-        "country": "VN",
-        "coord": {
-            "lon": 104.833328,
-            "lat": 19.33333
-        }
-    },
-    {
-        "id": 1559970,
-        "name": "Ninh Bình",
-        "state": "",
-        "country": "VN",
-        "coord": {
-            "lon": 105.833328,
-            "lat": 20.25
-        }
-    },
-    {
-        "id": 1559971,
-        "name": "Ninh Thuận",
-        "state": "",
-        "country": "VN",
-        "coord": {
-            "lon": 108.833328,
-            "lat": 11.75
-        }
-    },
-    {
-        "id": 1559972,
-        "name": "Sóc Trăng",
-        "state": "",
-        "country": "VN",
-        "coord": {
-            "lon": 105.833328,
-            "lat": 9.66667
-        }
-    },
-    {
-        "id": 1559975,
-        "name": "Trà Vinh",
-        "state": "",
-        "country": "VN",
-        "coord": {
-            "lon": 106.25,
-            "lat": 9.83333
-        }
-    },
-    {
-        "id": 1559976,
-        "name": "Tuyên Quang",
-        "state": "",
-        "country": "VN",
-        "coord": {
-            "lon": 105.25,
-            "lat": 22.116671
-        }
+  {
+    "id": 3169070,
+    "name": "Rome",
+    "state": "",
+    "country": "IT",
+    "coord": {
+      "lon": 12.4839,
+      "lat": 41.894741
     }
+  },
+  {
+    "id": 2643743,
+    "name": "London",
+    "state": "",
+    "country": "GB",
+    "coord": {
+      "lon": -0.12574,
+      "lat": 51.50853
+    }
+  },
+  {
+    "id": 2968815,
+    "name": "Paris",
+    "state": "",
+    "country": "FR",
+    "coord": {
+      "lon": 2.3486,
+      "lat": 48.853401
+    }
+  },
+  {
+    "id": 524894,
+    "name": "Moscow",
+    "state": "",
+    "country": "RU",
+    "coord": {
+      "lon": 37.606667,
+      "lat": 55.761665
+    }
+  },
+  {
+    "id": 1704129,
+    "name": "Madrid",
+    "state": "",
+    "country": "PH",
+    "coord": {
+      "lon": 125.964371,
+      "lat": 9.26211
+    }
+  },
+  {
+    "id": 1566166,
+    "name": "Thanh Hoa",
+    "state": "",
+    "country": "VN",
+    "coord": {
+      "lon": 105.76667,
+      "lat": 19.799999
+    }
+  },
+  {
+    "id": 1566083,
+    "name": "Ho Chi Minh",
+    "state": "",
+    "country": "VN",
+    "coord": {
+      "lon": 106.666672,
+      "lat": 10.75
+    }
+  },
+  {
+    "id": 1568574,
+    "name": "Quy Nhon",
+    "state": "",
+    "country": "VN",
+    "coord": {
+      "lon": 109.23333,
+      "lat": 13.76667
+    }
+  },
+  {
+    "id": 1581188,
+    "name": "Cần Thơ",
+    "state": "",
+    "country": "VN",
+    "coord": {
+      "lon": 105.666672,
+      "lat": 9.83333
+    }
+  },
+  {
+    "id": 1581297,
+    "name": "Hải Phòng",
+    "state": "",
+    "country": "VN",
+    "coord": {
+      "lon": 106.583328,
+      "lat": 20.83333
+    }
+  },
+  {
+    "id": 1582562,
+    "name": "Ðồng Tháp",
+    "state": "",
+    "country": "VN",
+    "coord": {
+      "lon": 105.666672,
+      "lat": 10.66667
+    }
+  },
+  {
+    "id": 1582720,
+    "name": "Ðồng Nai",
+    "state": "",
+    "country": "VN",
+    "coord": {
+      "lon": 107.166672,
+      "lat": 11
+    }
+  },
+  {
+    "id": 1584071,
+    "name": "Da Lat",
+    "state": "",
+    "country": "VN",
+    "coord": {
+      "lon": 108.441933,
+      "lat": 11.94646
+    }
+  },
+  {
+    "id": 1586896,
+    "name": "Buon Ma Thuot",
+    "state": "",
+    "country": "VN",
+    "coord": {
+      "lon": 108.050003,
+      "lat": 12.66667
+    }
+  },
+  {
+    "id": 1587871,
+    "name": "Bình Ðịnh",
+    "state": "",
+    "country": "VN",
+    "coord": {
+      "lon": 109,
+      "lat": 14.16667
+    }
+  },
+  {
+    "id": 1587976,
+    "name": "Ben Tre",
+    "state": "",
+    "country": "VN",
+    "coord": {
+      "lon": 106.383331,
+      "lat": 10.23333
+    }
+  },
+  {
+    "id": 1591449,
+    "name": "Bac Ninh",
+    "state": "",
+    "country": "VN",
+    "coord": {
+      "lon": 106.050003,
+      "lat": 21.183331
+    }
+  },
+  {
+    "id": 1591474,
+    "name": "Bac Lieu",
+    "state": "",
+    "country": "VN",
+    "coord": {
+      "lon": 105.724442,
+      "lat": 9.285
+    }
+  },
+  {
+    "id": 1581130,
+    "name": "Ha Noi",
+    "state": "",
+    "country": "VN",
+    "coord": {
+      "lon": 105.841171,
+      "lat": 21.0245
+    }
+  },
+  {
+    "id": 1581088,
+    "name": "Gia Lai",
+    "state": "",
+    "country": "VN",
+    "coord": {
+      "lon": 108.25,
+      "lat": 13.75
+    }
+  },
+  {
+    "id": 1576633,
+    "name": "Lang Son",
+    "state": "",
+    "country": "VN",
+    "coord": {
+      "lon": 106.73333,
+      "lat": 21.83333
+    }
+  },
+  {
+    "id": 1577882,
+    "name": "Lâm Ðồng",
+    "state": "",
+    "country": "VN",
+    "coord": {
+      "lon": 108.333328,
+      "lat": 11.5
+    }
+  },
+  {
+    "id": 1572594,
+    "name": "Hòa Bình",
+    "state": "",
+    "country": "VN",
+    "coord": {
+      "lon": 105.25,
+      "lat": 20.33333
+    }
+  },
+  {
+    "id": 1573517,
+    "name": "Nam Dinh",
+    "state": "",
+    "country": "VN",
+    "coord": {
+      "lon": 106.166672,
+      "lat": 20.41667
+    }
+  },
+  {
+    "id": 1562693,
+    "name": "Vinh Long",
+    "state": "",
+    "country": "VN",
+    "coord": {
+      "lon": 105.966667,
+      "lat": 10.25
+    }
+  },
+  {
+    "id": 1562798,
+    "name": "Vinh",
+    "state": "",
+    "country": "VN",
+    "coord": {
+      "lon": 105.666672,
+      "lat": 18.66667
+    }
+  },
+  {
+    "id": 1559969,
+    "name": "Nghệ An",
+    "state": "",
+    "country": "VN",
+    "coord": {
+      "lon": 104.833328,
+      "lat": 19.33333
+    }
+  },
+  {
+    "id": 1559970,
+    "name": "Ninh Bình",
+    "state": "",
+    "country": "VN",
+    "coord": {
+      "lon": 105.833328,
+      "lat": 20.25
+    }
+  },
+  {
+    "id": 1559971,
+    "name": "Ninh Thuận",
+    "state": "",
+    "country": "VN",
+    "coord": {
+      "lon": 108.833328,
+      "lat": 11.75
+    }
+  },
+  {
+    "id": 1559972,
+    "name": "Sóc Trăng",
+    "state": "",
+    "country": "VN",
+    "coord": {
+      "lon": 105.833328,
+      "lat": 9.66667
+    }
+  },
+  {
+    "id": 1559975,
+    "name": "Trà Vinh",
+    "state": "",
+    "country": "VN",
+    "coord": {
+      "lon": 106.25,
+      "lat": 9.83333
+    }
+  },
+  {
+    "id": 1559976,
+    "name": "Tuyên Quang",
+    "state": "",
+    "country": "VN",
+    "coord": {
+      "lon": 105.25,
+      "lat": 22.116671
+    }
+  }
 ]

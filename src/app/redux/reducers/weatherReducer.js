@@ -1,16 +1,10 @@
 import * as constants from "../../constants";
 
-export const weatherReducer = (state = [], { type, data }) => {
+export const weatherReducer = (state = {}, { type, data }) => {
   switch (type) {
     default:
       return state;
-    case constants.RECEIVE_API_DATA:
+    case constants.GET_FORECAST_BY_ID_SUCCESS:
       return data;
-    case constants.GET_WEATHER_BY_ID_SUCCESS:
-      console.log('getweather: ', data);
-      return [
-        ...state,
-        data
-      ];
   }
 };

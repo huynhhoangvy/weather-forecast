@@ -13,9 +13,6 @@ export default function App() {
         <li>
           <Link to="/cities">Cities</Link>
         </li>
-        <li>
-          <Link to="/api">Api</Link>
-        </li>
       </ul>
       <Routes />
     </div>

@@ -8,7 +8,7 @@ const Api = () => {
   const { results = [] } = weather;
 
   useEffect(() => {
-    dispatch(requestApiData());
+    // dispatch(requestApiData());
     console.log('run')
   }, []);
 

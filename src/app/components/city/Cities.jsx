@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import citiesData from '../../city-list.json';
 import Dropdown from "react-bootstrap/Dropdown";
 import CustomToggle from "../custom-toggle/CustomToggle";
 import CustomMenu from "../custom-menu/CustomMenu";
 import { getWeatherByIdRequest, addCity, removeCity } from "../../redux/actions/actionCreators";
 import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const Cities = () => {
   const dispatch = useDispatch();
@@ -14,12 +15,15 @@ const Cities = () => {
     const isExisting = cities.filter(item => item.id === city.id).length;
     if (!isExisting && cities.length < 10) {
       dispatch(getWeatherByIdRequest(city.id));
-      dispatch(addCity(city));
     }
   };
 
   const onClickRemoveCity = idx => {
     dispatch(removeCity(idx));
+    // const localData = JSON.parse(localStorage.getItem('cities'));
+    // if (localData) {
+    //   localStorage.setItem('cities', localData.filter(item => item.id !== idx));
+    // }
   };
 
   const getCityIds = (cities) => {
@@ -48,8 +52,15 @@ const Cities = () => {
         {
           cities.map((item, i) => (
             <li key={i}>
-              {item.name}
-              <button onClick={() => onClickRemoveCity(item.id)}>X</button>
+              <Link to={`/details/${item.id}`}>
+                {item.name}
+              </Link>
+                <button onClick={() => onClickRemoveCity(item.id)}>X</button>
+              <div>
+                {Math.ceil(item.main.temp)}&deg;C
+            </div>
+              {item.weather[0].main}
+              <img src={`http://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`} alt="" />
             </li>
           ))
         }

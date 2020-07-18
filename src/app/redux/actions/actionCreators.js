@@ -47,3 +47,22 @@ export const removeCity = id => {
     id
   }
 }
+
+export const getForecastByIdRequest = id => {
+  return {
+    type: constants.GET_FORECAST_BY_ID_REQUEST,
+    id
+  }
+}
+export const getForecastByIdSuccess = data => {
+  return {
+    type: constants.GET_FORECAST_BY_ID_SUCCESS,
+    data
+  }
+}
+export const getForecastByIdError = err => {
+  return {
+    type: constants.GET_FORECAST_BY_ID_ERROR,
+    err
+  }
+}
